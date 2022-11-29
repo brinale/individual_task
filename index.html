@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>CRM</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-panel">
+            <div class="logo">Мой сайт</div>
+            <div class="nav-elements">
+                <div class="nav-element">Магазины</div>
+                <div class="nav-element">Задачи</div>
+                <div class="nav-element">Чат и звонки</div>
+                <div class="nav-element">Календарь</div>
+                <div class="nav-element">Отчеты</div>
+                <div class="nav-element">Сотрудники</div>
+            </div>
+            <div class="nav-button">Пригласить сотрудников</div>
+        </div>
+        <div class="main-content">
+            <div class="header">
+                <form action="" class="search">
+                    <input type="search" class="search-input" placeholder="Искать сотрудника, задачу, прочее...">
+                    <button type="submit" class="search-button">
+                        <img src="img/search-icon.svg" alt="search-icon">
+                    </button>
+                </form>
+                <div class="user">
+                    <img src="img/avatar.png" alt="avatar" class="avatar">
+                    <div class="user-name">Денис Иванов</div>
+                    <button type="button" class="more-button">
+                        <img src="img/more-icon.svg" alt="more-icon">
+                    </button>
+                </div>
+            </div>
+            <div class="tabs-container">
+                <div class="tab">Магазины</div>
+                <div class="tab selected">Заказы</div>
+                <div class="tab">Товарный каталог</div>
+                <div class="tab">Покупатели</div>
+                <div class="tab">Складской учет</div>
+            </div>
+            <div class="tab-header">
+                <div class="tab-title">Заказы</div>
+                <form action="" class="search">
+                    <input type="search" class="search-input tab-search" placeholder="Поиск по заказам">
+                    <button type="submit" class="search-button tab-search_button">
+                        <img src="img/search-icon.svg" alt="search-icon">
+                    </button>
+                </form>
+                <button class="tab-button">+ Добавить заказ</button>
+            </div>
+            <div class="tab-content">
+                <div class="content-header">
+                    <div class="content-title">Заказы:</div>
+                    <div class="content-count">5</div>
+                </div>
+                <div class="content-table">
+                    <table class="table" id="table">
+                        <thead>
+                            <tr class="table-header">
+                                <th class="table-cell">
+                                    <img src="img/check-icon.svg" alt="check-icon">
+                                </th>
+                                <th class="table-cell">
+                                    <img src="img/settings-icon.svg" alt="settings-icon">
+                                </th>
+                                <th class="table-cell">Заказ</th>
+                                <th class="table-cell">Дата создания</th>
+                                <th class="table-cell">Статус</th>
+                                <th class="table-cell">Оплачен</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr class="table-row">
+                                <td class="content-cell">
+                                    <input type="radio" class="row-choose">
+                                </td>
+                                <td class="content-cell">
+                                    <button class="dots-button"><img src="img/dots-icon.svg" alt="dots-icon"></button>
+                                </td>
+                                <td class="content-cell">Заказ №5</td>
+                                <td class="content-cell">06.07.2022</td>
+                                <td class="content-cell">Новый заказ</td>
+                                <td class="content-cell">нет</td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="content-cell">
+                                    <input type="radio" class="row-choose">
+                                </td>
+                                <td class="content-cell">
+                                    <button class="dots-button"><img src="img/dots-icon.svg" alt="dots-icon"></button>
+                                </td>
+                                <td class="content-cell">Заказ №4</td>
+                                <td class="content-cell">04.07.2022</td>
+                                <td class="content-cell">Подтвержден</td>
+                                <td class="content-cell">нет</td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="content-cell">
+                                    <input type="radio" class="row-choose">
+                                </td>
+                                <td class="content-cell">
+                                    <button class="dots-button"><img src="img/dots-icon.svg" alt="dots-icon"></button>
+                                </td>
+                                <td class="content-cell">Заказ №3</td>
+                                <td class="content-cell">03.07.2022</td>
+                                <td class="content-cell">Отправлен</td>
+                                <td class="content-cell">да</td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="content-cell">
+                                    <input type="radio" class="row-choose">
+                                </td>
+                                <td class="content-cell">
+                                    <button class="dots-button"><img src="img/dots-icon.svg" alt="dots-icon"></button>
+                                </td>
+                                <td class="content-cell">Заказ №2</td>
+                                <td class="content-cell">01.07.2022</td>
+                                <td class="content-cell">Оплачен</td>
+                                <td class="content-cell">да</td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="content-cell">
+                                    <input type="radio" class="row-choose">
+                                </td>
+                                <td class="content-cell">
+                                    <button class="dots-button"><img src="img/dots-icon.svg" alt="dots-icon"></button>
+                                </td>
+                                <td class="content-cell">Заказ №1</td>
+                                <td class="content-cell">29.06.2022</td>
+                                <td class="content-cell">Закрыт</td>
+                                <td class="content-cell">да</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-info">
+                    <div class="checked-count">
+                        <div class="checked-title">Отмечено:</div>
+                        <div class="checked-count">2/5</div>
+                    </div>
+                    <div class="pages-count">
+                        <div class="pages-title">Страницы:</div>
+                        <div class="pages-count">1</div>
+                    </div>
+                    <div class="show-rows">
+                        <div class="shows-title">На странице:</div>
+                        <select class="shows-select">
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                            <option value="30">30</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="content-buttons">
+                    <button class="content-button delete">Удалить</button>
+                    <button class="content-button update">Изменить</button>
+                    <input type="radio" class="button-choose">
+                    <label for="button-choose" class="choose-label">Отметить все</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
